@@ -41,8 +41,8 @@ export const projects = [
     gallery: [
       "/frota2.png?height=400&width=600",
       "/frota3.png?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
+      // "/placeholder.svg?height=400&width=600",
+      // "/placeholder.svg?height=400&width=600",
     ],
     expertise: ["Design de interface", "Visualização de dados", "UX Research", "Prototipagem"],
     client: "Data Analytics Corp",
