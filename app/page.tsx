@@ -22,7 +22,7 @@ export default function Home() {
     { id: "graphic-design", label: "Design Gráfico" },
     { id: "branding", label: "Branding" },
     { id: "web-design", label: "Web Design" },
-    { id: "illustration", label: "Ilustração" },
+    // { id: "illustration", label: "Ilustração" },
   ];
 
   const filteredProjects =
@@ -265,7 +265,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-grid-pattern opacity-[0.03]"></div>
                 <div className="h-full w-full overflow-hidden rounded-xl bg-background">
                   <Image
-                    src="/images/logo.png?height=600&width=600"
+                    src="/images/eu.jpg?height=600&width=600"
                     alt="Designer"
                     fill
                     className="object-cover"
