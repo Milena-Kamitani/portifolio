@@ -265,10 +265,9 @@ export default function Home() {
                 <div className="absolute inset-0 bg-grid-pattern opacity-[0.03]"></div>
                 <div className="h-full w-full overflow-hidden rounded-xl bg-background">
                   <Image
-                    src="/images/eu.jpg"
+                    src="/eu.svg?height=600&width=800"
                     alt="Designer"
                     fill
-                    className="object-cover"
                   />
                 </div>
               </motion.div>
@@ -657,7 +656,11 @@ export default function Home() {
               className="rounded-xl border bg-background p-8 shadow-sm"
             >
               <h3 className="mb-4 text-xl font-bold">Envie uma Mensagem</h3>
-              <form className="space-y-4">
+              <form
+                className="space-y-4"
+                action="https://formsubmit.co/mkamitami@gmail.com"
+                method="POST"
+              >
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium">
@@ -665,7 +668,9 @@ export default function Home() {
                     </label>
                     <input
                       id="name"
+                      name="name"
                       type="text"
+                      required
                       className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
                       placeholder="Seu nome"
                     />
@@ -676,7 +681,9 @@ export default function Home() {
                     </label>
                     <input
                       id="email"
+                      name="email"
                       type="email"
+                      required
                       className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
                       placeholder="Email"
                     />
@@ -688,6 +695,7 @@ export default function Home() {
                   </label>
                   <input
                     id="subject"
+                    name="_subject"
                     type="text"
                     className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
                     placeholder="Como posso ajudar?"
@@ -699,11 +707,17 @@ export default function Home() {
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     rows={4}
+                    required
                     className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
                     placeholder="Detalhes do seu projeto..."
                   ></textarea>
                 </div>
+
+                {/* Oculta CAPTCHA (opcional) */}
+                <input type="hidden" name="_captcha" value="false" />
+
                 <Button type="submit" className="w-full">
                   Enviar Mensagem
                 </Button>

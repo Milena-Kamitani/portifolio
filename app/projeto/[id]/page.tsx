@@ -379,16 +379,16 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
             <div>
               <h3 className="mb-4 text-sm font-medium">Contato</h3>
               <ul className="space-y-2 text-sm">
-                <li className="text-muted-foreground">seu.email@exemplo.com</li>
-                <li className="text-muted-foreground">(00) 00000-0000</li>
-                <li className="text-muted-foreground">Sua Cidade, Estado</li>
+                <li className="text-muted-foreground">mkamitami@gmail.com</li>
+                <li className="text-muted-foreground">(44) 99964-1256</li>
+                <li className="text-muted-foreground">Brasil</li>
               </ul>
             </div>
           </div>
           <div className="mt-8 border-t pt-8">
             <p className="text-center text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} Studio Criativo. Todos os
-              direitos reservados.
+              &copy; {new Date().getFullYear()} mkamitami. Todos os direitos
+              reservados.
             </p>
           </div>
         </div>
