@@ -265,7 +265,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-grid-pattern opacity-[0.03]"></div>
                 <div className="h-full w-full overflow-hidden rounded-xl bg-background">
                   <Image
-                    src="/images/eu.jpg?height=600&width=600"
+                    src="/images/eu.jpg"
                     alt="Designer"
                     fill
                     className="object-cover"
