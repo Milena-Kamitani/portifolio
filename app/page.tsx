@@ -214,6 +214,25 @@ export default function Home() {
         >
           <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
           <div className="container relative">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-12"
+            >
+              <div className="inline-block rounded-full bg-muted px-3 py-1 text-sm">
+                Sobre Mim
+              </div>
+              <h2 className="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
+                UX Designer & Web Developer
+              </h2>
+              <p className="max-w-[85%] text-muted-foreground sm:text-lg">
+                Combinando habilidades técnicas e criativas para desenvolver
+                soluções completas e inovadoras.
+              </p>
+            </motion.div>
+
             <div className="mx-auto grid max-w-5xl gap-12 lg:grid-cols-2 lg:gap-16">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -222,22 +241,20 @@ export default function Home() {
                 transition={{ duration: 0.5 }}
                 className="flex flex-col justify-center space-y-6"
               >
-                <div className="inline-block rounded-full bg-muted px-3 py-1 text-sm">
-                  Sobre Mim
-                </div>
-                <h2 className="text-3xl font-bold leading-tight sm:text-4xl">
-                  Designer apaixonada por criar experiências impactantes
-                </h2>
+                <h3 className="text-2xl font-bold">Perfil Pessoal</h3>
                 <p className="text-muted-foreground">
-                  Com experiência em design, tenho trabalhado com marcas e
-                  empresas para criar experiências visuais memoráveis que
-                  conectam pessoas e ideias.
+                  Sou graduada em Análise e Desenvolvimento de Sistemas pela
+                  UniCesumar e atuo como Analista de Sistemas Júnior I, com foco
+                  em desenvolvimento full stack e experiência prática em React
+                  Native, Salesforce e Progress ABL. Tenho uma base sólida em
+                  tecnologias web, metodologias ágeis (Scrum/Kanban) e um olhar
+                  apurado para a experiência do usuário.
                 </p>
                 <p className="text-muted-foreground">
-                  Minha abordagem combina estética com funcionalidade,
-                  garantindo que cada projeto não apenas pareça incrível, mas
-                  também atenda às necessidades dos usuários e objetivos de
-                  negócios.
+                  Já liderei projetos acadêmicos e profissionais, como o
+                  desenvolvimento de um aplicativo para controle de frotas, e
+                  mantenho uma forte conexão com design de interfaces e
+                  usabilidade.
                 </p>
                 <div className="flex flex-col gap-4 pt-4 sm:flex-row">
                   <Button asChild className="rounded-full">
@@ -260,18 +277,316 @@ export default function Home() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="relative aspect-square overflow-hidden rounded-2xl "
+                className="relative aspect-square overflow-hidden rounded-2xl"
               >
                 <div className="absolute inset-0 bg-grid-pattern opacity-[0.03]"></div>
                 <div className="h-full w-full overflow-hidden rounded-xl bg-background">
                   <Image
                     src="/eu.svg?height=600&width=800"
-                    alt="Designer"
+                    alt="Milena Kamitami"
                     fill
+                    className="object-cover"
                   />
                 </div>
               </motion.div>
             </div>
+
+            <div className="mt-16 grid gap-8 md:grid-cols-2">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="rounded-xl border bg-background p-8 shadow-sm"
+              >
+                <h3 className="mb-6 text-xl font-bold">
+                  Experiência Profissional
+                </h3>
+
+                <div className="mb-8">
+                  <div className="mb-2 flex items-center justify-between">
+                    <h4 className="font-bold">Analista de Sistema Junior I</h4>
+                    <span className="text-sm text-muted-foreground">
+                      Mar. 2025 - presente
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    StationSoft
+                  </p>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Atuação como desenvolvedora full stack, participando da
+                        criação de sistemas e aplicativos multiplataforma.
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Desenvolvimento de aplicações mobile utilizando React
+                        Native, com foco em usabilidade e performance.
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Criação e manutenção de sistemas corporativos utilizando
+                        Salesforce e Progress ABL.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div className="mb-2 flex items-center justify-between">
+                    <h4 className="font-bold">Técnica de Suporte em TI</h4>
+                    <span className="text-sm text-muted-foreground">
+                      Nov. 2022 - Mar. 2025
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Unicesumar
+                  </p>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Prestação de suporte técnico para usuários, garantindo a
+                        resolução ágil de problemas relacionados a sistemas.
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Participação ativa na integração de sistemas durante a
+                        fusão com o grupo Vitru Education.
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Desenvolvimento e implementação de soluções para
+                        melhorar a eficiência das operações.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="rounded-xl border bg-background p-8 shadow-sm"
+              >
+                <h3 className="mb-6 text-xl font-bold">Formação Acadêmica</h3>
+
+                <div className="mb-8">
+                  <div className="mb-2 flex items-center justify-between">
+                    <h4 className="font-bold">
+                      Pós-graduação em Computação Forense e Perícia Digital
+                    </h4>
+                    <span className="text-sm text-muted-foreground">
+                      Fev. 2025 - em andamento
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-2">Unopar</p>
+                  <p className="text-sm">
+                    Especialização voltada para a análise forense de dados,
+                    segurança da informação e investigação digital.
+                  </p>
+                </div>
+
+                <div className="mb-8">
+                  <div className="mb-2 flex items-center justify-between">
+                    <h4 className="font-bold">
+                      Pós-graduação em Especialista Full Stack
+                    </h4>
+                    <span className="text-sm text-muted-foreground">
+                      Jan. 2025 - em andamento
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Rocketseat
+                  </p>
+                  <p className="text-sm">
+                    Especialização focada no desenvolvimento Full-Stack,
+                    abrangendo Node.js, React, DevOps, IA, Produto e Inovação.
+                  </p>
+                </div>
+
+                <div>
+                  <div className="mb-2 flex items-center justify-between">
+                    <h4 className="font-bold">
+                      Análise e Desenvolvimento de Sistemas
+                    </h4>
+                    <span className="text-sm text-muted-foreground">
+                      Fev. 2022 - Dez. 2024
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Unicesumar
+                  </p>
+                  <p className="text-sm">
+                    Graduação focada em desenvolvimento de software, banco de
+                    dados, design de interfaces e metodologias ágeis.
+                  </p>
+                </div>
+              </motion.div>
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="mt-8 rounded-xl border bg-background p-8 shadow-sm"
+            >
+              <h3 className="mb-6 text-xl font-bold">Competências</h3>
+
+              <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <div className="space-y-3">
+                  <h4 className="font-medium">Desenvolvimento</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      JavaScript
+                    </span>
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      React
+                    </span>
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      React Native
+                    </span>
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      Next.js
+                    </span>
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      Node.js
+                    </span>
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      HTML
+                    </span>
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      CSS
+                    </span>
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      Java
+                    </span>
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      C
+                    </span>
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      Nest
+                    </span>
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <h4 className="font-medium">Banco de Dados</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      SQL
+                    </span>
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      noSQL
+                    </span>
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <h4 className="font-medium">Design</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      Design Gráfico
+                    </span>
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      UX/UI
+                    </span>
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      Figma
+                    </span>
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      Canva
+                    </span>
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <h4 className="font-medium">Outros</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      Salesforce
+                    </span>
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      Progress
+                    </span>
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      Scrum
+                    </span>
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      Kanban
+                    </span>
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                      Inglês
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <h4 className="mb-4 font-medium">Cursos Complementares</h4>
+                <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+                  <div className="rounded-lg border p-4">
+                    <h5 className="font-medium">UX Design e Design Thinking</h5>
+                    <p className="text-xs text-muted-foreground">Udemy, 2025</p>
+                  </div>
+                  <div className="rounded-lg border p-4">
+                    <h5 className="font-medium">
+                      Formação Design Gráfico Completo
+                    </h5>
+                    <p className="text-xs text-muted-foreground">Udemy, 2025</p>
+                  </div>
+                  <div className="rounded-lg border p-4">
+                    <h5 className="font-medium">Web Design</h5>
+                    <p className="text-xs text-muted-foreground">Udemy, 2023</p>
+                  </div>
+                  <div className="rounded-lg border p-4">
+                    <h5 className="font-medium">POO em Java</h5>
+                    <p className="text-xs text-muted-foreground">Udemy, 2023</p>
+                  </div>
+                  <div className="rounded-lg border p-4">
+                    <h5 className="font-medium">
+                      CS50: Introdução à Ciência da Computação
+                    </h5>
+                    <p className="text-xs text-muted-foreground">
+                      Harvard, 2022
+                    </p>
+                  </div>
+                  <div className="rounded-lg border p-4">
+                    <h5 className="font-medium">Linguagem C e C++</h5>
+                    <p className="text-xs text-muted-foreground">Udemy, 2022</p>
+                  </div>
+                  <div className="rounded-lg border p-4">
+                    <h5 className="font-medium">Banco de Dados</h5>
+                    <p className="text-xs text-muted-foreground">
+                      Curso em Video, 2022
+                    </p>
+                  </div>
+                  <div className="rounded-lg border p-4">
+                    <h5 className="font-medium">Lógica de Programação</h5>
+                    <p className="text-xs text-muted-foreground">
+                      Curso em Video, 2022
+                    </p>
+                  </div>
+                  <div className="rounded-lg border p-4">
+                    <h5 className="font-medium">Excel intermediário</h5>
+                    <p className="text-xs text-muted-foreground">UEM, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </section>
 
