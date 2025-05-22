@@ -543,12 +543,6 @@ export default function Home() {
                     <p className="text-xs text-muted-foreground">Udemy, 2025</p>
                   </div>
                   <div className="rounded-lg border p-4">
-                    <h5 className="font-medium">
-                      Formação Design Gráfico Completo
-                    </h5>
-                    <p className="text-xs text-muted-foreground">Udemy, 2025</p>
-                  </div>
-                  <div className="rounded-lg border p-4">
                     <h5 className="font-medium">Web Design</h5>
                     <p className="text-xs text-muted-foreground">Udemy, 2023</p>
                   </div>
