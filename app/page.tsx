@@ -539,6 +539,12 @@ export default function Home() {
                 <h4 className="mb-4 font-medium">Cursos Complementares</h4>
                 <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
                   <div className="rounded-lg border p-4">
+                    <h5 className="font-medium">
+                      Formação em Product Manager{" "}
+                    </h5>
+                    <p className="text-xs text-muted-foreground">Udemy, 2025</p>
+                  </div>
+                  <div className="rounded-lg border p-4">
                     <h5 className="font-medium">UX Design e Design Thinking</h5>
                     <p className="text-xs text-muted-foreground">Udemy, 2025</p>
                   </div>
