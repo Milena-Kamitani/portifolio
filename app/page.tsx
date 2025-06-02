@@ -382,14 +382,32 @@ export default function Home() {
                 className="rounded-xl border bg-background p-8 shadow-sm"
               >
                 <h3 className="mb-6 text-xl font-bold">Formação Acadêmica</h3>
-
+                <div className="mb-8">
+                  <div className="mb-2 flex items-center justify-between">
+                    <h4 className="font-bold">
+                      Pós-graduação em Gestão de Produtos
+                    </h4>
+                    <span className="text-sm text-muted-foreground">
+                      Jun. 2025 - em andamento
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-2">Unopar</p>
+                  <p className="text-sm">
+                    Especialização focada na atuação como Product Manager, com
+                    ênfase em cultura ágil, visão estratégica e melhoria
+                    contínua. Desenvolve habilidades em discovery, UX research,
+                    backlog, MVP, OKRs e liderança de times. Aborda práticas de
+                    CX e concepção de produtos digitais com abordagem integrada
+                    entre tecnologia, design e estratégia.
+                  </p>
+                </div>
                 <div className="mb-8">
                   <div className="mb-2 flex items-center justify-between">
                     <h4 className="font-bold">
                       Pós-graduação em Computação Forense e Perícia Digital
                     </h4>
                     <span className="text-sm text-muted-foreground">
-                      Fev. 2025 - em andamento
+                      Fev. 2025 - Jun.2025
                     </span>
                   </div>
                   <p className="text-sm text-muted-foreground mb-2">Unopar</p>
