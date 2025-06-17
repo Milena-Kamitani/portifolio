@@ -307,7 +307,7 @@ export default function Home() {
                   <div className="mb-2 flex items-center justify-between">
                     <h4 className="font-bold">Analista de Sistema Junior I</h4>
                     <span className="text-sm text-muted-foreground">
-                      Mar. 2025 - presente
+                      Mar. 2025 - Jul. 2025
                     </span>
                   </div>
                   <p className="text-sm text-muted-foreground mb-2">
@@ -468,34 +468,34 @@ export default function Home() {
                 <div className="space-y-3">
                   <h4 className="font-medium">Desenvolvimento</h4>
                   <div className="flex flex-wrap gap-2">
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       JavaScript
                     </span>
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       React
                     </span>
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       React Native
                     </span>
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       Next.js
                     </span>
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       Node.js
                     </span>
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       HTML
                     </span>
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       CSS
                     </span>
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       Java
                     </span>
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       C
                     </span>
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       Nest
                     </span>
                   </div>
@@ -504,10 +504,10 @@ export default function Home() {
                 <div className="space-y-3">
                   <h4 className="font-medium">Banco de Dados</h4>
                   <div className="flex flex-wrap gap-2">
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       SQL
                     </span>
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       noSQL
                     </span>
                   </div>
@@ -516,16 +516,16 @@ export default function Home() {
                 <div className="space-y-3">
                   <h4 className="font-medium">Design</h4>
                   <div className="flex flex-wrap gap-2">
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       Design Gráfico
                     </span>
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       UX/UI
                     </span>
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       Figma
                     </span>
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       Canva
                     </span>
                   </div>
@@ -534,19 +534,19 @@ export default function Home() {
                 <div className="space-y-3">
                   <h4 className="font-medium">Outros</h4>
                   <div className="flex flex-wrap gap-2">
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       Salesforce
                     </span>
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       Progress
                     </span>
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       Scrum
                     </span>
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       Kanban
                     </span>
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
                       Inglês
                     </span>
                   </div>
