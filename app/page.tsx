@@ -243,12 +243,18 @@ export default function Home() {
               >
                 <h3 className="text-2xl font-bold">Perfil Pessoal</h3>
                 <p className="text-muted-foreground">
-                  Sou graduada em Análise e Desenvolvimento de Sistemas pela
-                  UniCesumar e atuo como Analista de Sistemas Júnior I, com foco
-                  em desenvolvimento full stack e experiência prática em React
-                  Native, Salesforce e Progress ABL. Tenho uma base sólida em
-                  tecnologias web, metodologias ágeis (Scrum/Kanban) e um olhar
-                  apurado para a experiência do usuário.
+                  Sou profissional com sólida formação em Análise e Desenvolvimento de Sistemas e experiência prática como desenvolvedora full stack, 
+                  com trajetória focada na construção de soluções digitais funcionais e intuitivas, colaborando em squads multidisciplinares e aplicando 
+                  metodologias ágeis. Atuei com tecnologias como React Native, UX/UI, Figma e integração de sistemas, sempre com foco em usabilidade,
+                  eficiência e experiência do usuário. Tenho experiência na criação de sistemas web e mobile integrados, priorizando rastreamento em tempo real e 
+                  funcionalidades otimizadas para ambientes institucionais e corporativos, além do desenvolvimento e manutenção de soluções tecnológicas 
+                  utilizando React Native, Salesforce, Progress ABL e Webspeed, resultando em entregas que melhoraram a performance e facilitaram o uso das
+                  aplicações. Ao longo da minha carreira, participei da elaboração de soluções técnicas baseadas em análise de requisitos, testes contínuos,
+                  integração entre departamentos e feedback de usuários finais, contribuindo ativamente para projetos de automação e centralização de dados, 
+                  promovendo processos mais eficientes e fluxos otimizados. Também ofereci suporte técnico e adaptação de sistemas em contextos de integração 
+                  organizacional, garantindo estabilidade e personalização das ferramentas conforme as necessidades dos usuários. Além disso, utilizei ferramentas 
+                  de design e prototipação como Figma, combinadas a sólidos conhecimentos em lógica de programação e banco de dados, para entregar experiências alinhadas às melhores práticas de UX/UI.
+                  Atualmente, estou em transição de carreira para a área de Gestão de Produtos, unindo minha base técnica a uma visão estratégica voltada para a construção de soluções alinhadas às necessidades reais do usuário, validação contínua e foco em métricas de sucesso, o que me prepara para contribuir com projetos inovadores e entregas de alto impacto.
                 </p>
                 <p className="text-muted-foreground">
                   Já liderei projetos acadêmicos e profissionais, como o
@@ -302,6 +308,50 @@ export default function Home() {
                 <h3 className="mb-6 text-xl font-bold">
                   Experiência Profissional
                 </h3>
+                <div className="mb-8">
+                  <div className="mb-2 flex items-center justify-between">
+                    <h4 className="font-bold">Analista de Sistema Junior </h4>
+                    <span className="text-sm text-muted-foreground">
+                     Jul. 2025 - Atual
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Indemil Indústria e Comércio
+                  </p>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Atuo na gestão estratégica de soluções e sistemas corporativos, apoiando todo o ciclo de vida dos produtos,
+                        desde a definição da visão e planejamento até a entrega contínua de valor para o negócio.
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Apoio no planejamento, priorização e gestão de backlog de produtos, garantindo alinhamento com os objetivos estratégicos da empresa;
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Colaboração na facilitação de cerimônias ágeis (planning, review e daily), promovendo transparência e engajamento entre as equipes;
+                      </span>
+                    </li>
+                      <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Levantamento e análise de requisitos junto às áreas de negócio, transformando necessidades em soluções escaláveis e eficazes;
+                      </span>
+                    </li>
+                                        <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Interface constante com stakeholders, assegurando entregas de alto impacto e alinhadas às expectativas do cliente final;
+                      </span>
+                    </li>
+                  </ul>
+                </div>
 
                 <div className="mb-8">
                   <div className="mb-2 flex items-center justify-between">
