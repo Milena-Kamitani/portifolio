@@ -225,7 +225,7 @@ export default function Home() {
                 Sobre Mim
               </div>
               <h2 className="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
-                UX Designer & Web Developer
+                Product Mananger
               </h2>
               <p className="max-w-[85%] text-muted-foreground sm:text-lg">
                 Combinando habilidades técnicas e criativas para desenvolver
