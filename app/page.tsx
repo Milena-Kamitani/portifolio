@@ -301,7 +301,7 @@ export default function Home() {
                   <div className="mb-2 flex items-center justify-between">
                     <h4 className="font-bold">Analista de Sistema Junior </h4>
                     <span className="text-sm text-muted-foreground">
-                     Jul. 2025 - Atual
+                     Jul. 2025 - Out. 2025
                     </span>
                   </div>
                   <p className="text-sm text-muted-foreground mb-2">
@@ -411,6 +411,46 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
+                 <div className="mb-8">
+                  <div className="mb-2 flex items-center justify-between">
+                    <h4 className="font-bold">Designer Gráfico FreelancerI</h4>
+                    <span className="text-sm text-muted-foreground">
+                      Abr. 2019 - Atual
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Autonoma 
+                  </p>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Atuação com criação de logotipos, identidade visual e materiais digitais para marcas e
+projetos pessoais
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Criação de logotipos e identidade visual.
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Desenvolvimento de materiais gráficos para redes sociais.
+                      </span>
+                    </li>
+                                        <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                         Design voltado à identidade da marca e posicionamento digital.
+                      </span>
+                    </li>
+
+                  </ul>
+                </div>
+
               </motion.div>
 
               <motion.div
