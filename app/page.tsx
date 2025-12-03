@@ -411,7 +411,7 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
-                <div>
+
                  <div className="mb-8">
                   <div className="mb-2 flex items-center justify-between">
                     <h4 className="font-bold">Designer Gráfico Freelancer</h4>
