@@ -411,9 +411,10 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
+                <div>
                  <div className="mb-8">
                   <div className="mb-2 flex items-center justify-between">
-                    <h4 className="font-bold">Designer Gráfico FreelancerI</h4>
+                    <h4 className="font-bold">Designer Gráfico Freelancer</h4>
                     <span className="text-sm text-muted-foreground">
                       Abr. 2019 - Atual
                     </span>
@@ -447,7 +448,6 @@ projetos pessoais
                          Design voltado à identidade da marca e posicionamento digital.
                       </span>
                     </li>
-
                   </ul>
                 </div>
 
