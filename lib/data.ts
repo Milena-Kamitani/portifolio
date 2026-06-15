@@ -34,8 +34,8 @@ export const projects = [
   {
     id: "3",
     title: "Inova Frota",
-    category: "UI/UX Design",
-    categoryId: "ui-ux",
+    category: "Desenvolvimento Mobile",
+    categoryId: "mobile",
     image: "/frota1.png?height=600&width=800",
     gallery: [
       "/frota2.png?height=400&width=600",
@@ -43,8 +43,8 @@ export const projects = [
       "/frota5.png?height=400&width=600",
       "/frota3.png?height=400&width=600",
     ],
-    expertise: ["Design de interface", "Visualização de dados", "UX Research", "Prototipagem"],
-    services: ["UX Research", "UI Design", "Data Visualization", "Prototyping"],
+    expertise: ["React Native", "Fluxos operacionais", "UX/UI", "Prototipagem"],
+    services: ["Mobile Development", "UI Design", "Product Flow", "Prototyping"],
   },
     {
     id: "4",
@@ -95,9 +95,9 @@ export const projects = [
 
   {
     id: "7",
-    title: "Design de Marca",
-     category: "Web Design",
-    categoryId: "web-design",
+    title: "Website Institucional",
+     category: "Desenvolvimento Web",
+    categoryId: "web-development",
     image: "/web3.jpeg?height=600&width=800",
     gallery: [
       "/web.png?height=400&width=600",
@@ -106,14 +106,14 @@ export const projects = [
       "/web2.png?height=400&width=600",
 
     ],
-    expertise: ["Design de interface", "Design responsivo", "Arquitetura da informação", "Prototipagem"],
-    services: ["Web Design", "Responsive Design", "Prototyping", "Development"],
+    expertise: ["Front-end", "Design responsivo", "Arquitetura da informação", "Prototipagem"],
+    services: ["Web Development", "Responsive Design", "Prototyping", "UI Implementation"],
   },
   {
     id: "8",
     title: "Aplicativo Sleep Sounds",
-    category: "UI/UX Design",
-    categoryId: "ui-ux",
+    category: "Desenvolvimento Mobile",
+    categoryId: "mobile",
     image: "/11.svg?height=600&width=800",
     gallery: [
       "/10.svg?height=400&width=600",
@@ -121,8 +121,8 @@ export const projects = [
       "/11.svg?height=400&width=600",
       "/12.png?height=400&width=600",
     ],
-    expertise: ["Design de interface", "Visualização de dados", "UX Research", "Prototipagem"],
-    services: ["UX Research", "UI Design", "Data Visualization", "Prototyping"],
+    expertise: ["Mobile UI", "Experiência do usuário", "Prototipagem", "Fluxos de navegação"],
+    services: ["Mobile Design", "UI Design", "User Flow", "Prototyping"],
   },
  {
     id: "9",
@@ -158,8 +158,8 @@ export const projects = [
   {
     id: "11",
     title: "Website para Restaurante",
-    category: "Web Design",
-    categoryId: "web-design",
+    category: "Desenvolvimento Web",
+    categoryId: "web-development",
     image: "/food3.png?height=600&width=800",
     gallery: [
       "/food.jpeg?height=400&width=600",
@@ -167,8 +167,8 @@ export const projects = [
       "/food2.jpeg?height=400&width=600",
       "/food4.png?height=400&width=600",
     ],
-    expertise: ["Design de interface", "Design responsivo", "Elementos interativos", "Arquitetura da informação"],
-    services: ["Web Design", "Responsive Design", "Interactive Elements", "CMS Setup"],
+    expertise: ["Front-end", "Design responsivo", "Elementos interativos", "Arquitetura da informação"],
+    services: ["Web Development", "Responsive Design", "Interactive Elements", "UI Implementation"],
   },
   {
     id: "12",

@@ -4,7 +4,17 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, ChevronRight, ExternalLink, Menu } from "lucide-react";
+import {
+  ArrowRight,
+  ChevronRight,
+  Code2,
+  Database,
+  ExternalLink,
+  Github,
+  Menu,
+  Palette,
+  Smartphone,
+} from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -18,11 +28,11 @@ export default function Home() {
 
   const categories = [
     { id: "all", label: "Todos" },
+    { id: "web-development", label: "Desenvolvimento Web" },
+    { id: "mobile", label: "Mobile" },
     { id: "ui-ux", label: "UI/UX Design" },
     { id: "graphic-design", label: "Design Gráfico" },
     { id: "branding", label: "Branding" },
-    { id: "web-design", label: "Web Design" },
-    // { id: "illustration", label: "Ilustração" },
   ];
 
   const filteredProjects =
@@ -43,7 +53,7 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-            <span className="inline-block">MKAMITAMI</span>
+            <span className="inline-block">MKAMITANI</span>
           </Link>
 
           <nav className="hidden md:flex md:gap-6 lg:gap-10">
@@ -138,15 +148,16 @@ export default function Home() {
               className="mx-auto flex max-w-[58rem] flex-col items-center text-center"
             >
               <div className="mb-6 inline-block rounded-full bg-muted px-3 py-1 text-sm">
-                Design & Criatividade
+                Desenvolvimento Full Stack
               </div>
               <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
-                Transformando ideias em experiências visuais
+                Construindo soluções digitais completas
               </h1>
               <p className="mb-8 max-w-[42rem] text-muted-foreground sm:text-xl">
-                Portfólio de artes gráficas, design de interfaces e projetos no
-                Figma que conectam pessoas através de experiências visuais
-                memoráveis.
+                Desenvolvedora full stack com experiência em React, React
+                Native, Next.js, Node.js, Java, Salesforce e Progress ABL. Uno
+                lógica de produto, interfaces bem cuidadas e código para criar
+                aplicações úteis, responsivas e escaláveis.
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
                 <Button asChild size="lg" className="rounded-full">
@@ -184,8 +195,8 @@ export default function Home() {
               Projetos em Destaque
             </h2>
             <p className="max-w-[85%] text-muted-foreground sm:text-lg">
-              Explore minha coleção de trabalhos em design gráfico, interfaces
-              de usuário e protótipos no Figma.
+              Explore projetos que combinam desenvolvimento web, mobile,
+              interfaces, branding e design gráfico.
             </p>
           </motion.div>
 
@@ -225,11 +236,12 @@ export default function Home() {
                 Sobre Mim
               </div>
               <h2 className="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
-                Product Mananger
+                Desenvolvedora Full Stack
               </h2>
               <p className="max-w-[85%] text-muted-foreground sm:text-lg">
-                Combinando habilidades técnicas e criativas para desenvolver
-                soluções completas e inovadoras.
+                Atuo no desenvolvimento de aplicações web e mobile, com olhar
+                atento para experiência do usuário, regra de negócio e entrega
+                de valor.
               </p>
             </motion.div>
 
@@ -243,13 +255,16 @@ export default function Home() {
               >
                 <h3 className="text-2xl font-bold">Perfil Pessoal</h3>
                 <p className="text-muted-foreground">
-                 Sou profissional com sólida formação em Análise e Desenvolvimento de Sistemas, com trajetória focada na construção de soluções digitais funcionais e intuitivas, colaborando em squads multidisciplinares e aplicando metodologias ágeis. Tenho experiência na criação de sistemas web e mobile integrados, priorizando rastreamento em tempo real e funcionalidades otimizadas para ambientes institucionais e corporativos. Além disso, utilizei ferramentas de design e prototipação como Figma, combinadas a sólidos conhecimentos em lógica de programação e banco de dados, para entregar experiências alinhadas às melhores práticas de UX/UI. Atualmente, estou em transição de carreira para a área de Gestão de Produtos, unindo minha base técnica a uma visão estratégica voltada para a construção de soluções alinhadas às necessidades reais do usuário, validação contínua e foco em métricas de sucesso, o que me prepara para contribuir com projetos inovadores e entregas de alto impacto.
+                  Sou graduada em Análise e Desenvolvimento de Sistemas pela
+                  UniCesumar e atuo como desenvolvedora full stack, com
+                  experiência prática em React Native, Node.js e Java. Tenho
+                  base sólida em tecnologias web, banco de dados, metodologias
+                  ágeis (Scrum/Kanban) e experiência do usuário.
                 </p>
                 <p className="text-muted-foreground">
-                  Já liderei projetos acadêmicos e profissionais, como o
-                  desenvolvimento de um aplicativo para controle de frotas, e
-                  mantenho uma forte conexão com design de interfaces e
-                  usabilidade.
+                  Já participei de projetos acadêmicos e profissionais, como o
+                  desenvolvimento de aplicativo para controle de frotas, além de
+                  projetos de interface, identidade visual e presença digital.
                 </p>
                 <div className="flex flex-col gap-4 pt-4 sm:flex-row">
                   <Button asChild className="rounded-full">
@@ -343,70 +358,180 @@ export default function Home() {
                 </div>
 
                 <div className="mb-8">
-                  <div className="mb-2 flex items-center justify-between">
-                    <h4 className="font-bold">Analista de Sistema Junior I</h4>
+                  <div className="mb-2 flex items-center justify-between gap-4">
+                    <h4 className="font-bold">Analista de Sistemas Júnior</h4>
                     <span className="text-sm text-muted-foreground">
-                      Mar. 2025 - Jul. 2025
+                      2025
                     </span>
                   </div>
                   <p className="text-sm text-muted-foreground mb-2">
-                    StationSoft
+                    Indemil
                   </p>
                   <ul className="mt-2 space-y-2 text-sm">
                     <li className="flex items-start">
                       <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                       <span>
-                        Atuação como desenvolvedora full stack, participando da
-                        criação de sistemas e aplicativos multiplataforma.
+                        Apoio no planejamento, priorização e gestão de backlog
+                        de produtos, conectando objetivos de negócio,
+                        tecnologia e experiência do usuário.
                       </span>
                     </li>
                     <li className="flex items-start">
                       <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                       <span>
-                        Desenvolvimento de aplicações mobile utilizando React
-                        Native, com foco em usabilidade e performance.
+                        Colaboração em cerimônias ágeis, levantamento de
+                        requisitos e acompanhamento de métricas para apoiar
+                        decisões estratégicas.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="mb-8">
+                  <div className="mb-2 flex items-center justify-between gap-4">
+                    <h4 className="font-bold">Desenvolvedora Full Stack</h4>
+                    <span className="text-sm text-muted-foreground">
+                      2024 - Atual
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Freelancer / Autônoma
+                  </p>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Desenvolvimento de aplicações web, mobile, landing
+                        pages, dashboards e sistemas administrativos para
+                        clientes e projetos independentes.
                       </span>
                     </li>
                     <li className="flex items-start">
                       <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                       <span>
-                        Criação e manutenção de sistemas corporativos utilizando
-                        Salesforce e Progress ABL.
+                        Criação de interfaces, protótipos e fluxos com foco em
+                        usabilidade, identidade visual e entrega rápida de
+                        soluções digitais.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="mb-8">
+                  <div className="mb-2 flex items-center justify-between gap-4">
+                    <h4 className="font-bold">Designer Gráfico</h4>
+                    <span className="text-sm text-muted-foreground">
+                      2019 - Atual
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Freelancer / Autônoma
+                  </p>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Criação de logos, identidade visual, peças para redes
+                        sociais, materiais gráficos e presença digital para
+                        marcas e projetos independentes.
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Desenvolvimento de layouts e conceitos visuais com foco
+                        em comunicação clara, estética e consistência de marca.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="mb-8">
+                  <div className="mb-2 flex items-center justify-between gap-4">
+                    <h4 className="font-bold">Analista de Suporte Técnico</h4>
+                    <span className="text-sm text-muted-foreground">
+                      2022 - 2025
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Vitru Educação
+                  </p>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Registro, acompanhamento e análise de chamados técnicos,
+                        contribuindo para a melhoria de processos internos e da
+                        experiência dos usuários.
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Apoio na resolução de problemas em sistemas e
+                        aplicações, colaborando com equipes multidisciplinares.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="mb-8">
+                  <div className="mb-2 flex items-center justify-between gap-4">
+                    <h4 className="font-bold">Desenvolvedora de Software</h4>
+                    <span className="text-sm text-muted-foreground">
+                      2019 - 2025
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Stationsoft
+                  </p>
+                  <ul className="mt-2 space-y-2 text-sm">
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Desenvolvimento e manutenção de sistemas legados e novos
+                        módulos, com foco em soluções corporativas e integração
+                        institucional.
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>
+                        Atuação com Progress ABL, Webspeed, análise de
+                        requisitos, testes, implantação e melhorias baseadas em
+                        feedback de usuários.
                       </span>
                     </li>
                   </ul>
                 </div>
 
                 <div>
-                  <div className="mb-2 flex items-center justify-between">
-                    <h4 className="font-bold">Técnica de Suporte em TI</h4>
+                  <div className="mb-2 flex items-center justify-between gap-4">
+                    <h4 className="font-bold">
+                      Assistente Administrativo Financeiro
+                    </h4>
                     <span className="text-sm text-muted-foreground">
-                      Nov. 2022 - Mar. 2025
+                      2018 - Atual
                     </span>
                   </div>
                   <p className="text-sm text-muted-foreground mb-2">
-                    Unicesumar
+                    Aik Network
                   </p>
                   <ul className="mt-2 space-y-2 text-sm">
                     <li className="flex items-start">
                       <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                       <span>
-                        Prestação de suporte técnico para usuários, garantindo a
-                        resolução ágil de problemas relacionados a sistemas.
+                        Controle de contas a pagar e receber, emissão de notas
+                        fiscais, organização de documentos e relatórios
+                        financeiros.
                       </span>
                     </li>
                     <li className="flex items-start">
                       <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                       <span>
-                        Participação ativa na integração de sistemas durante a
-                        fusão com o grupo Vitru Education.
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span>
-                        Desenvolvimento e implementação de soluções para
-                        melhorar a eficiência das operações.
+                        Apoio em projetos digitais, identidade visual e peças
+                        para redes sociais, conectando organização, design e
+                        rotina operacional.
                       </span>
                     </li>
                   </ul>
@@ -462,65 +587,62 @@ projetos pessoais
               >
                 <h3 className="mb-6 text-xl font-bold">Formação Acadêmica</h3>
                 <div className="mb-8">
-                  <div className="mb-2 flex items-center justify-between">
+                  <div className="mb-2 flex items-center justify-between gap-4">
                     <h4 className="font-bold">
                       Pós-graduação em Gestão de Produtos
                     </h4>
                     <span className="text-sm text-muted-foreground">
-                      Jun. 2025 - em andamento
+                      2026
                     </span>
                   </div>
                   <p className="text-sm text-muted-foreground mb-2">Unopar</p>
                   <p className="text-sm">
-                    Especialização focada na atuação como Product Manager, com
-                    ênfase em cultura ágil, visão estratégica e melhoria
-                    contínua. Desenvolve habilidades em discovery, UX research,
-                    backlog, MVP, OKRs e liderança de times. Aborda práticas de
-                    CX e concepção de produtos digitais com abordagem integrada
-                    entre tecnologia, design e estratégia.
+                    Especialização que complementa minha atuação técnica com
+                    visão de produto, cultura ágil, discovery, UX research,
+                    backlog, MVP, OKRs e estratégia para produtos digitais.
                   </p>
                 </div>
                 <div className="mb-8">
-                  <div className="mb-2 flex items-center justify-between">
+                  <div className="mb-2 flex items-center justify-between gap-4">
                     <h4 className="font-bold">
                       Pós-graduação em Computação Forense e Perícia Digital  
                     </h4>
                     <span className="text-sm text-muted-foreground">
-                      Fev. 2025 - Jun.2025
+                      2025
                     </span>
                   </div>
                   <p className="text-sm text-muted-foreground mb-2">Unopar</p>
                   <p className="text-sm">
-                    Especialização voltada para a análise forense de dados,
+                    Especialização voltada para análise forense de dados,
                     segurança da informação e investigação digital.
                   </p>
                 </div>
 
                 <div className="mb-8">
-                  <div className="mb-2 flex items-center justify-between">
+                  <div className="mb-2 flex items-center justify-between gap-4">
                     <h4 className="font-bold">
-                      Pós-graduação em Especialista Full Stack
+                      Pós-graduação Especialista Full Stack
                     </h4>
                     <span className="text-sm text-muted-foreground">
-                      Jan. 2025 - em andamento
+                      2026
                     </span>
                   </div>
                   <p className="text-sm text-muted-foreground mb-2">
                     Rocketseat
                   </p>
                   <p className="text-sm">
-                    Especialização focada no desenvolvimento Full-Stack,
-                    abrangendo Node.js, React, DevOps, IA, Produto e Inovação.
+                    Formação focada em desenvolvimento full stack, abrangendo
+                    Node.js, Java, React, DevOps, IA, produto e inovação.
                   </p>
                 </div>
 
                 <div>
-                  <div className="mb-2 flex items-center justify-between">
+                  <div className="mb-2 flex items-center justify-between gap-4">
                     <h4 className="font-bold">
                       Análise e Desenvolvimento de Sistemas
                     </h4>
                     <span className="text-sm text-muted-foreground">
-                      Fev. 2022 - Dez. 2024
+                      2024
                     </span>
                   </div>
                   <p className="text-sm text-muted-foreground mb-2">
@@ -587,7 +709,7 @@ projetos pessoais
                       SQL
                     </span>
                     <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-purple-300">
-                      noSQL
+                      NoSQL
                     </span>
                   </div>
                 </div>
@@ -633,53 +755,51 @@ projetos pessoais
               </div>
 
               <div className="mt-8">
-                <h4 className="mb-4 font-medium">Cursos Complementares</h4>
+                <h4 className="mb-4 font-medium">Certificados e Cursos</h4>
                 <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
                   <div className="rounded-lg border p-4">
-                    <h5 className="font-medium">
-                      Formação em Product Manager{" "}
-                    </h5>
+                    <h5 className="font-medium">Formação em Product Manager</h5>
                     <p className="text-xs text-muted-foreground">Udemy, 2025</p>
                   </div>
                   <div className="rounded-lg border p-4">
-                    <h5 className="font-medium">UX Design e Design Thinking</h5>
-                    <p className="text-xs text-muted-foreground">Udemy, 2025</p>
-                  </div>
-                  <div className="rounded-lg border p-4">
-                    <h5 className="font-medium">Web Design</h5>
-                    <p className="text-xs text-muted-foreground">Udemy, 2023</p>
-                  </div>
-                  <div className="rounded-lg border p-4">
-                    <h5 className="font-medium">POO em Java</h5>
-                    <p className="text-xs text-muted-foreground">Udemy, 2023</p>
+                    <h5 className="font-medium">Desenvolvimento Full Stack</h5>
+                    <p className="text-xs text-muted-foreground">Rocketseat</p>
                   </div>
                   <div className="rounded-lg border p-4">
                     <h5 className="font-medium">
                       CS50: Introdução à Ciência da Computação
                     </h5>
-                    <p className="text-xs text-muted-foreground">
-                      Harvard, 2022
-                    </p>
-                  </div>
-                  <div className="rounded-lg border p-4">
-                    <h5 className="font-medium">Linguagem C e C++</h5>
-                    <p className="text-xs text-muted-foreground">Udemy, 2022</p>
-                  </div>
-                  <div className="rounded-lg border p-4">
-                    <h5 className="font-medium">Banco de Dados</h5>
-                    <p className="text-xs text-muted-foreground">
-                      Curso em Video, 2022
-                    </p>
+                    <p className="text-xs text-muted-foreground">Harvard</p>
                   </div>
                   <div className="rounded-lg border p-4">
                     <h5 className="font-medium">Lógica de Programação</h5>
+                    <p className="text-xs text-muted-foreground">UEM, 2020</p>
+                  </div>
+                  <div className="rounded-lg border p-4">
+                    <h5 className="font-medium">Banco de Dados e SQL</h5>
+                    <p className="text-xs text-muted-foreground">Udemy, 2022</p>
+                  </div>
+                  <div className="rounded-lg border p-4">
+                    <h5 className="font-medium">Java Orientado a Objetos</h5>
+                    <p className="text-xs text-muted-foreground">Udemy, 2022</p>
+                  </div>
+                  <div className="rounded-lg border p-4">
+                    <h5 className="font-medium">Design Thinking</h5>
                     <p className="text-xs text-muted-foreground">
-                      Curso em Video, 2022
+                      Curso em Vídeo, 2022
                     </p>
                   </div>
                   <div className="rounded-lg border p-4">
-                    <h5 className="font-medium">Excel intermediário</h5>
-                    <p className="text-xs text-muted-foreground">UEM, 2020</p>
+                    <h5 className="font-medium">
+                      Noções de Infraestrutura, Servidores, Containers e Cloud
+                    </h5>
+                    <p className="text-xs text-muted-foreground">Udemy, 2023</p>
+                  </div>
+                  <div className="rounded-lg border p-4">
+                    <h5 className="font-medium">
+                      Gerenciamento de Novos Produtos
+                    </h5>
+                    <p className="text-xs text-muted-foreground">Udemy, 2023</p>
                   </div>
                 </div>
               </div>
@@ -702,8 +822,8 @@ projetos pessoais
               Áreas de Atuação
             </h2>
             <p className="max-w-[85%] text-muted-foreground sm:text-lg">
-              Combinando criatividade com conhecimento técnico para entregar
-              resultados excepcionais.
+              Unindo front-end, back-end, mobile e design para criar produtos
+              digitais claros, funcionais e bem implementados.
             </p>
           </motion.div>
 
@@ -716,55 +836,29 @@ projetos pessoais
               className="rounded-xl border bg-background p-8 shadow-sm"
             >
               <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-primary"
-                >
-                  <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"></path>
-                  <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path>
-                  <path d="M12 2v2"></path>
-                  <path d="M12 22v-2"></path>
-                  <path d="m17 20.66-1-1.73"></path>
-                  <path d="M11 10.27 7 3.34"></path>
-                  <path d="m20.66 17-1.73-1"></path>
-                  <path d="m3.34 7 1.73 1"></path>
-                  <path d="M14 12h8"></path>
-                  <path d="M2 12h2"></path>
-                  <path d="m20.66 7-1.73 1"></path>
-                  <path d="m3.34 17 1.73-1"></path>
-                  <path d="m17 3.34-1 1.73"></path>
-                  <path d="m11 13.73-4 6.93"></path>
-                </svg>
+                <Code2 className="text-primary" />
               </div>
-              <h3 className="mb-2 text-xl font-bold">UI/UX Design</h3>
+              <h3 className="mb-2 text-xl font-bold">Front-end</h3>
               <p className="text-muted-foreground">
-                Criação de interfaces intuitivas e experiências de usuário que
-                combinam estética com funcionalidade.
+                Construção de interfaces responsivas, componentizadas e
+                cuidadosas com usabilidade.
               </p>
               <ul className="mt-4 space-y-2 text-sm">
                 <li className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4 text-primary" />
-                  Pesquisa de usuários
+                  React e Next.js
                 </li>
                 <li className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4 text-primary" />
-                  Wireframing
+                  TypeScript e JavaScript
                 </li>
                 <li className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4 text-primary" />
-                  Prototipagem
+                  Tailwind CSS
                 </li>
                 <li className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4 text-primary" />
-                  Testes de usabilidade
+                  UI/UX aplicado
                 </li>
               </ul>
             </motion.div>
@@ -777,45 +871,29 @@ projetos pessoais
               className="rounded-xl border bg-background p-8 shadow-sm"
             >
               <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-primary"
-                >
-                  <path d="M12 3v12"></path>
-                  <path d="M6 15h12"></path>
-                  <path d="m16 7-4-4-4 4"></path>
-                  <path d="M3 5v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2Z"></path>
-                </svg>
+                <Smartphone className="text-primary" />
               </div>
-              <h3 className="mb-2 text-xl font-bold">Design Gráfico</h3>
+              <h3 className="mb-2 text-xl font-bold">Mobile</h3>
               <p className="text-muted-foreground">
-                Desenvolvimento de materiais visuais impactantes que comunicam
-                mensagens de forma eficaz.
+                Desenvolvimento de aplicativos e fluxos móveis com foco em uso
+                real, performance e clareza.
               </p>
               <ul className="mt-4 space-y-2 text-sm">
                 <li className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4 text-primary" />
-                  Identidade visual
+                  React Native
                 </li>
                 <li className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4 text-primary" />
-                  Materiais impressos
+                  Navegação e estados
                 </li>
                 <li className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4 text-primary" />
-                  Design editorial
+                  Prototipagem
                 </li>
                 <li className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4 text-primary" />
-                  Tipografia
+                  Experiência do usuário
                 </li>
               </ul>
             </motion.div>
@@ -828,44 +906,29 @@ projetos pessoais
               className="rounded-xl border bg-background p-8 shadow-sm"
             >
               <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-primary"
-                >
-                  <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"></path>
-                  <path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"></path>
-                  <path d="M12 3v6"></path>
-                </svg>
+                <Database className="text-primary" />
               </div>
-              <h3 className="mb-2 text-xl font-bold">Branding</h3>
+              <h3 className="mb-2 text-xl font-bold">Back-end e Sistemas</h3>
               <p className="text-muted-foreground">
-                Criação de identidades visuais consistentes que representam a
-                essência e valores das marcas.
+                Atuação em sistemas corporativos, integrações, dados e regras
+                de negócio.
               </p>
               <ul className="mt-4 space-y-2 text-sm">
                 <li className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4 text-primary" />
-                  Estratégia de marca
+                  Node.js, Java e Nest
                 </li>
                 <li className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4 text-primary" />
-                  Design de logotipos
+                  SQL e NoSQL
                 </li>
                 <li className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4 text-primary" />
-                  Guias de estilo
+                  Salesforce
                 </li>
                 <li className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4 text-primary" />
-                  Aplicações da marca
+                  Progress ABL
                 </li>
               </ul>
             </motion.div>
@@ -878,45 +941,29 @@ projetos pessoais
               className="rounded-xl border bg-background p-8 shadow-sm"
             >
               <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-primary"
-                >
-                  <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
-                  <polyline points="14 2 14 8 20 8"></polyline>
-                  <path d="M12 18v-6"></path>
-                  <path d="m9 15 3 3 3-3"></path>
-                </svg>
+                <Palette className="text-primary" />
               </div>
-              <h3 className="mb-2 text-xl font-bold">Ilustração</h3>
+              <h3 className="mb-2 text-xl font-bold">Design e Produto</h3>
               <p className="text-muted-foreground">
-                Criação de ilustrações digitais e arte conceitual para diversos
-                projetos e aplicações.
+                Uso design e visão de produto como apoio para criar soluções
+                mais compreensíveis.
               </p>
               <ul className="mt-4 space-y-2 text-sm">
                 <li className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4 text-primary" />
-                  Ilustração digital
+                  UI/UX Design
                 </li>
                 <li className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4 text-primary" />
-                  Design de personagens
+                  Figma
                 </li>
                 <li className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4 text-primary" />
-                  Arte conceitual
+                  Branding
                 </li>
                 <li className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4 text-primary" />
-                  Infográficos
+                  Scrum e Kanban
                 </li>
               </ul>
             </motion.div>
@@ -938,8 +985,8 @@ projetos pessoais
               Entre em Contato
             </h2>
             <p className="max-w-[85%] text-muted-foreground sm:text-lg">
-              Interessado em trabalhar juntos? Entre em contato para discutirmos
-              seu projeto.
+              Quer conversar sobre desenvolvimento, sistemas ou presença
+              digital? Entre em contato.
             </p>
           </motion.div>
 
@@ -1001,7 +1048,7 @@ projetos pessoais
                   <div>
                     <p className="font-medium">Telefone</p>
                     <a
-                      href="tel:+5500000000000"
+                      href="tel:+5544999641256"
                       className="text-sm text-muted-foreground hover:text-primary"
                     >
                       (44) 99964-1256
@@ -1035,6 +1082,15 @@ projetos pessoais
 
               <h3 className="mb-4 mt-8 text-xl font-bold">Redes Sociais</h3>
               <div className="flex space-x-4">
+                <a
+                  aria-label="GitHub"
+                  href="https://github.com/Milena-Kamitani"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-muted hover:bg-muted/80"
+                >
+                  <Github className="h-5 w-5" />
+                </a>
                 <a
                   href="https://www.linkedin.com/in/milena-kamitami-40ab8b207/"
                   target="_blank"
@@ -1174,11 +1230,10 @@ projetos pessoais
                     className="object-cover"
                   />
                 </div>
-                <span className="inline-block font-bold">MKAMITAMI</span>
+                <span className="inline-block font-bold">MKAMITANI</span>
               </Link>
               <p className="mt-4 max-w-xs text-sm text-muted-foreground">
-                Transformando ideias em experiências visuais impactantes através
-                do design.
+                Desenvolvendo soluções digitais com código, produto e design.
               </p>
             </div>
             <div>
@@ -1219,8 +1274,24 @@ projetos pessoais
               </ul>
             </div>
             <div>
-              <h3 className="mb-4 text-sm font-medium">Serviços</h3>
+              <h3 className="mb-4 text-sm font-medium">Atuação</h3>
               <ul className="space-y-2 text-sm">
+                <li>
+                  <Link
+                    href="#"
+                    className="text-muted-foreground hover:text-foreground"
+                  >
+                    Desenvolvimento Web
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-muted-foreground hover:text-foreground"
+                  >
+                    Desenvolvimento Mobile
+                  </Link>
+                </li>
                 <li>
                   <Link
                     href="#"
@@ -1234,23 +1305,7 @@ projetos pessoais
                     href="#"
                     className="text-muted-foreground hover:text-foreground"
                   >
-                    Design Gráfico
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    Branding
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    Web Design
+                    Sistemas e Integrações
                   </Link>
                 </li>
               </ul>

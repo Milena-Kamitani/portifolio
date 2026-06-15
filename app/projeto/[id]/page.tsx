@@ -4,14 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import {
-  ArrowLeft,
-  Eye,
-  Calendar,
-  Tag,
-  ChevronRight,
-  ArrowRight,
-} from "lucide-react";
+import { ArrowLeft, Eye, Tag, ChevronRight, ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -83,7 +76,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                   className="object-cover"
                 />
               </div>
-              <span className="inline-block font-bold">MKAMITAMI</span>
+              <span className="inline-block font-bold">MKAMITANI</span>
             </Link>
           </div>
           <div className="flex flex-1 items-center justify-end space-x-4">
@@ -142,15 +135,15 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                   <p className="text-muted-foreground">
                     Este projeto foi desenvolvido para demonstrar minhas
                     habilidades em {project.category}. O objetivo principal foi
-                    criar uma solução visual que atendesse às necessidades do
-                    cliente enquanto oferece uma experiência de usuário
-                    excepcional.
+                    criar uma solução digital ou visual que atendesse às
+                    necessidades do cliente com clareza, usabilidade e boa
+                    apresentação.
                   </p>
                   <p className="text-muted-foreground">
-                    Durante o processo de design, foquei em criar uma estética
-                    moderna e funcional, garantindo que cada elemento visual
-                    contribuísse para a usabilidade geral e para a comunicação
-                    eficaz da mensagem da marca.
+                    Durante o processo, foquei em transformar requisitos em uma
+                    experiência funcional, organizando fluxos, interfaces e
+                    elementos visuais para facilitar o uso e comunicar a
+                    proposta do projeto.
                   </p>
 
                   <div className="grid gap-6 sm:grid-cols-2">
@@ -180,11 +173,10 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
 
                   <h2 className="text-2xl font-bold">Resultados</h2>
                   <p className="text-muted-foreground">
-                    O projeto final resultou em uma solução visual coesa e
-                    impactante que atendeu a todos os objetivos estabelecidos. O
-                    feedback do cliente foi extremamente positivo, destacando a
-                    clareza da comunicação visual e a experiência do usuário
-                    intuitiva.
+                    O projeto final resultou em uma entrega coesa, com atenção
+                    à organização da informação, experiência de uso e qualidade
+                    visual. A proposta reforça minha atuação entre tecnologia,
+                    design e resolução de problemas.
                   </p>
                 </motion.div>
               </div>
@@ -208,7 +200,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                 </div>
 
                 <div className="rounded-xl border bg-background p-6 shadow-sm">
-                  <h3 className="mb-4 text-lg font-bold">Serviços Prestados</h3>
+                  <h3 className="mb-4 text-lg font-bold">Entregas</h3>
                   <ul className="space-y-2 text-sm">
                     {project.services?.map((service: string) => (
                       <li key={service} className="flex items-center">
@@ -298,8 +290,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                 <span className="inline-block font-bold">MKAMITANI</span>
               </Link>
               <p className="mt-4 max-w-xs text-sm text-muted-foreground">
-                Transformando ideias em experiências visuais impactantes através
-                do design.
+                Desenvolvendo soluções digitais com código, produto e design.
               </p>
             </div>
             <div>
@@ -340,8 +331,24 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
               </ul>
             </div>
             <div>
-              <h3 className="mb-4 text-sm font-medium">Serviços</h3>
+              <h3 className="mb-4 text-sm font-medium">Atuação</h3>
               <ul className="space-y-2 text-sm">
+                <li>
+                  <Link
+                    href="#"
+                    className="text-muted-foreground hover:text-foreground"
+                  >
+                    Desenvolvimento Web
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-muted-foreground hover:text-foreground"
+                  >
+                    Desenvolvimento Mobile
+                  </Link>
+                </li>
                 <li>
                   <Link
                     href="#"
@@ -355,23 +362,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                     href="#"
                     className="text-muted-foreground hover:text-foreground"
                   >
-                    Design Gráfico
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    Branding
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    Web Design
+                    Sistemas e Integrações
                   </Link>
                 </li>
               </ul>
