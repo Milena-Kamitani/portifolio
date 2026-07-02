@@ -316,7 +316,7 @@ export default function Home() {
                   <div className="mb-2 flex items-center justify-between gap-4">
                     <h4 className="font-bold">Analista de Sistemas Júnior</h4>
                     <span className="text-sm text-muted-foreground">
-                      Jul. 2025 - Out. 2025
+                      2025
                     </span>
                   </div>
                   <p className="mb-2 text-sm text-muted-foreground">
