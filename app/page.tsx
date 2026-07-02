@@ -313,75 +313,38 @@ export default function Home() {
                   Experiência Profissional
                 </h3>
                 <div className="mb-8">
-                  <div className="mb-2 flex items-center justify-between">
-                    <h4 className="font-bold">Analista de Sistema Junior </h4>
+                  <div className="mb-2 flex items-center justify-between gap-4">
+                    <h4 className="font-bold">Analista de Sistemas Júnior</h4>
                     <span className="text-sm text-muted-foreground">
-                     Jul. 2025 - Out. 2025
+                      Jul. 2025 - Out. 2025
                     </span>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-2">
+                  <p className="mb-2 text-sm text-muted-foreground">
                     Indemil Indústria e Comércio
                   </p>
                   <ul className="mt-2 space-y-2 text-sm">
                     <li className="flex items-start">
                       <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                       <span>
-                        Atuo na gestão estratégica de soluções e sistemas corporativos, apoiando todo o ciclo de vida dos produtos,
-                        desde a definição da visão e planejamento até a entrega contínua de valor para o negócio.
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span>
-                        Apoio no planejamento, priorização e gestão de backlog de produtos, garantindo alinhamento com os objetivos estratégicos da empresa;
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span>
-                        Colaboração na facilitação de cerimônias ágeis (planning, review e daily), promovendo transparência e engajamento entre as equipes;
-                      </span>
-                    </li>
-                      <li className="flex items-start">
-                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span>
-                        Levantamento e análise de requisitos junto às áreas de negócio, transformando necessidades em soluções escaláveis e eficazes;
-                      </span>
-                    </li>
-                                        <li className="flex items-start">
-                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span>
-                        Interface constante com stakeholders, assegurando entregas de alto impacto e alinhadas às expectativas do cliente final;
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="mb-8">
-                  <div className="mb-2 flex items-center justify-between gap-4">
-                    <h4 className="font-bold">Analista de Sistemas Júnior</h4>
-                    <span className="text-sm text-muted-foreground">
-                      2025
+                        Apoio ao planejamento e à priorização do backlog,
+                        conectando demandas do negócio, tecnologia e
+                        experiência do usuário.
                     </span>
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-2">
-                    Indemil
-                  </p>
-                  <ul className="mt-2 space-y-2 text-sm">
+                    </li>
                     <li className="flex items-start">
                       <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                       <span>
-                        Apoio no planejamento, priorização e gestão de backlog
-                        de produtos, conectando objetivos de negócio,
-                        tecnologia e experiência do usuário.
+                        Levantamento e análise de requisitos junto às áreas
+                        internas, transformando necessidades em soluções
+                        escaláveis.
                       </span>
                     </li>
                     <li className="flex items-start">
                       <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                       <span>
-                        Colaboração em cerimônias ágeis, levantamento de
-                        requisitos e acompanhamento de métricas para apoiar
-                        decisões estratégicas.
+                        Facilitação de cerimônias ágeis e alinhamento com
+                        stakeholders para manter entregas consistentes e de
+                        impacto.
                       </span>
                     </li>
                   </ul>
@@ -402,16 +365,15 @@ export default function Home() {
                       <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                       <span>
                         Desenvolvimento de aplicações web, mobile, landing
-                        pages, dashboards e sistemas administrativos para
-                        clientes e projetos independentes.
+                        pages e dashboards para clientes e projetos
+                        independentes.
                       </span>
                     </li>
                     <li className="flex items-start">
                       <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                       <span>
-                        Criação de interfaces, protótipos e fluxos com foco em
-                        usabilidade, identidade visual e entrega rápida de
-                        soluções digitais.
+                        Criação de interfaces e protótipos com foco em
+                        usabilidade, identidade visual e entrega rápida.
                       </span>
                     </li>
                   </ul>
@@ -431,16 +393,15 @@ export default function Home() {
                     <li className="flex items-start">
                       <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                       <span>
-                        Criação de logos, identidade visual, peças para redes
-                        sociais, materiais gráficos e presença digital para
-                        marcas e projetos independentes.
+                        Criação de identidades visuais, logos e peças para
+                        redes sociais e materiais gráficos.
                       </span>
                     </li>
                     <li className="flex items-start">
                       <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                       <span>
                         Desenvolvimento de layouts e conceitos visuais com foco
-                        em comunicação clara, estética e consistência de marca.
+                        em clareza, estética e consistência de marca.
                       </span>
                     </li>
                   </ul>
@@ -460,9 +421,9 @@ export default function Home() {
                     <li className="flex items-start">
                       <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                       <span>
-                        Registro, acompanhamento e análise de chamados técnicos,
-                        contribuindo para a melhoria de processos internos e da
-                        experiência dos usuários.
+                        Registro, acompanhamento e análise de chamados
+                        técnicos, contribuindo para a melhoria de processos e
+                        da experiência dos usuários.
                       </span>
                     </li>
                     <li className="flex items-start">
@@ -489,16 +450,16 @@ export default function Home() {
                     <li className="flex items-start">
                       <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                       <span>
-                        Desenvolvimento e manutenção de sistemas legados e novos
-                        módulos, com foco em soluções corporativas e integração
-                        institucional.
+                        Desenvolvimento e manutenção de sistemas legados e
+                        novos módulos, com foco em soluções corporativas e
+                        integração institucional.
                       </span>
                     </li>
                     <li className="flex items-start">
                       <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                       <span>
                         Atuação com Progress ABL, Webspeed, análise de
-                        requisitos, testes, implantação e melhorias baseadas em
+                        requisitos, testes, implantação e melhorias com base em
                         feedback de usuários.
                       </span>
                     </li>
@@ -532,45 +493,6 @@ export default function Home() {
                         Apoio em projetos digitais, identidade visual e peças
                         para redes sociais, conectando organização, design e
                         rotina operacional.
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-
-                 <div className="mb-8">
-                  <div className="mb-2 flex items-center justify-between">
-                    <h4 className="font-bold">Designer Gráfico Freelancer</h4>
-                    <span className="text-sm text-muted-foreground">
-                      Abr. 2019 - Atual
-                    </span>
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-2">
-                    Autonoma 
-                  </p>
-                  <ul className="mt-2 space-y-2 text-sm">
-                    <li className="flex items-start">
-                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span>
-                        Atuação com criação de logotipos, identidade visual e materiais digitais para marcas e
-projetos pessoais
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span>
-                        Criação de logotipos e identidade visual.
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span>
-                        Desenvolvimento de materiais gráficos para redes sociais.
-                      </span>
-                    </li>
-                                        <li className="flex items-start">
-                      <ChevronRight className="mr-2 h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span>
-                         Design voltado à identidade da marca e posicionamento digital.
                       </span>
                     </li>
                   </ul>
